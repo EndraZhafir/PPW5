@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Purchase Form</title>
+    </head>
+    <body style="margin: 0; font-family: Arial, sans-serif;
+    background-image: url(Photos/inrainbowsbackground.jpg);
+    background-size: cover; background-position: center;
+    color: white; display: flex; flex-direction: column;
+    align-items: center; min-height: 100vh;">
+
+        <img src="Photos/inrainbowsheader.png" alt="Header Image" style="width: 400px;
+        height: 400px; object-fit: cover; display: block; margin-top: 20px;"> 
+
+        <div style="max-width: 400px; margin: 20px auto; padding: 20px;
+        background: rgba(0, 0, 0, 0.5); border-radius: 10px;">
+            <p align="justify">
+                In Rainbows is the seventh studio album by the English rock band Radiohead. 
+                It was self-released on 10 October 2007 as a download, followed by a retail 
+                release internationally through XL Recordings on 3 December 2007 and in 
+                North America through TBD Records on 1 January 2008. It was Radiohead's 
+                first release after their recording contract with EMI ended with their album 
+                Hail to the Thief (2003).
+            </p>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required style="width: 100%;
+                padding: 10px; margin: 10px 0; border: none; border-radius: 5px;">
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required style="width: 100%;
+                padding: 10px; margin: 10px 0; border: none; border-radius: 5px;">
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required style="width: 100%;
+                padding: 10px; margin: 10px 0; border: none; border-radius: 5px;">
+
+                <label for="phone">Phone number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="0123-4567-8910"
+                style="width: 100%; padding: 10px; margin: 10px 0; border: none;
+                border-radius: 5px;">
+
+                <br>
+                <label for="typealbum">Choose file type:</label><br>
+                <select id="typealbum" name="typealbum" style="width: 100%; padding:
+                10px; margin: 10px 0; border: none; border-radius: 5px;">
+                    <option value="mp3">MP3</option>
+                    <option value="wav">WAV</option>
+                    <option value="flac">FLAC</option>
+                </select>
+
+                <br>
+                <label for="quality">Choose quality:</label><br>
+                <input type="checkbox" id="low" name="quality" value="Low Bitrate">
+                <label for="low">Low Bitrate (64 kbps)</label><br>
+                <input type="checkbox" id="mid" name="quality" value="Medium Bitrate">
+                <label for="mid">Medium Bitrate (128 kbps)</label><br>
+                <input type="checkbox" id="high" name="quality" value="High Bitrate">
+                <label for="high">High Bitrate (320 kbps)</label><br>
+                <input type="checkbox" id="lossless" name="quality" value="Lossless">
+                <label for="lossless">Lossless Quality</label><br>
+
+                <br>
+                <a href="Terms&Conditions.html" target="_blank" style="color: white;">
+                    Terms and Conditions
+                </a><br>
+                <input type="radio" id="agreement" name="terms" value="yes" required>
+                <label for="agreement">I agree</label><br>
+                <input type="radio" id="disagreement" name="terms" value="no" required>
+                <label for="disagreement">I disagree</label><br><br>
+
+                <label for="price">Name your price: </label><br>
+                <input type="text" id="price" placeholder="0.00$" name="price"
+                required style="width: 100%; padding: 10px; margin: 10px 0; border: none;
+                border-radius: 5px;">
+
+                <input type="submit" id="purchase" value="Submit" style="width: 100%;
+                padding: 10px; margin: 10px 0; background: darkred; color: white;
+                border: none; border-radius: 5px; cursor: pointer;">
+            </form>
+        </div>
+
+        <footer style="background-color: orange; text-align: center; width: 100%;">
+            <p>
+                &copy; XL Recordings &copy; Radiohead | All rights reserved.
+                Form created by Tb M Endra Zhafir A 24/538769/SV/24535
+            </p>
+        </footer>
+
+    </body>
+</html>
